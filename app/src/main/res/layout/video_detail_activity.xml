@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:paddingStart="10dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="10dp">
+
+    <LinearLayout
+        android:id="@+id/video_detail_inner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:id="@+id/video_detail_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_launcher_background"
+                    android:contentDescription="@string/detail_image_contet" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/bt_video_play"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detail_play_button" />
+
+                <Button
+                    android:id="@+id/bt_video_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detail_add_button" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/video_detail_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="start|left"
+            android:orientation="vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp">
+
+            <TextView
+                android:id="@+id/tv_detail_title"
+                android:text="@string/detail_title_default"
+                style="@style/detailTitleOne" />
+
+            <TextView
+                android:id="@+id/tv_detail_overview"
+                android:text="@string/detail_overview_title_default"
+                style="@style/detailTitleTwo" />
+
+            <TextView
+                android:id="@+id/tv_detail_overview_text"
+                android:text="@string/detail_overview_default"
+                style="@style/detailItemText" />
+
+            <TextView
+                android:id="@+id/tv_detail_date_title"
+                android:text="@string/detail_date_title_default"
+                style="@style/detailTitleTwo" />
+
+            <TextView
+                android:id="@+id/tv_detail_date"
+                android:text="@string/detail_date_default"
+                style="@style/detailItemText" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

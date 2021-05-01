@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Video Player</string>
+
+    <string name="nav_search">Search</string>
+    <string name="nav_settings">Setting</string>
+
+    <string name="detail_play_button">PLAY</string>
+    <string name="detail_add_button">ADD</string>
+    <string name="detail_title_default">Title</string>
+    <string name="detail_overview_title_default">
+        Overview
+    </string>
+    <string name="detail_overview_default">
+        Overview| Overview| Overview| Overview| Overview| Overview| Overview| Overview|
+    </string>
+    <string name="detail_date_title_default">Released Date</string>
+    <string name="detail_date_default">YYYY-MM-DD</string>
+    <string name="detail_season_title_default">Season</string>
+    <string name="detail_season_default">00</string>
+    <string name="detail_episode_title_default">Episode</string>
+    <string name="detail_episode_default">00</string>
+    <string name="detail_image_contet">image</string>
+</resources>
